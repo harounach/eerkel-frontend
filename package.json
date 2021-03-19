@@ -1,0 +1,23 @@
+{
+  "name": "eerkel-frontend",
+  "version": "1.0.0",
+  "description": "Eerkel App Front End",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harounach/eerkel-frontend.git"
+  },
+  "keywords": [
+    "Eerkel"
+  ],
+  "author": "Haroun Ach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harounach/eerkel-frontend/issues"
+  },
+  "homepage": "https://github.com/harounach/eerkel-frontend#readme"
+}
