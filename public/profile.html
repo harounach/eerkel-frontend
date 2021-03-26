@@ -7,28 +7,84 @@
     <title>Profile</title>
   </head>
   <body>
-    <header>
-      <div>Logo</div>
-      <div>Profile Link</div>
+    <header class="appbar">
+      <!-- logo -->
+      <a class="logo" href="home.html"
+        ><img class="logo__img" src="./images/logo.svg" alt="" />
+      </a>
+
+      <!-- Profile dropdown -->
+      <div class="profile-dropdown">
+        <div class="profile-dropdown__img">Avatar</div>
+        <div class="profile-dropdown__content">
+          <a href="#" class="profile-dropdown__link">Profile</a>
+          <a href="#" class="profile-dropdown__link">Logout</a>
+        </div>
+      </div>
     </header>
-    <main>
-      <h1>Profile</h1>
-      <form>
-        <label for="username">Username</label>
-        <input id="username" type="text" name="username" />
-        <label for="email">Email</label>
-        <input id="email" type="text" name="email" />
-        <label for="password">Password</label>
-        <input id="password" type="password" name="password" />
-        <label for="passwordConfirm">Password</label>
-        <input id="passwordConfirm" type="password" name="passwordConfirm" />
-        <button type="submit">Update</button>
-        <button type="submit">Remove</button>
-      </form>
-      <div>Hero Image</div>
+    <main class="main">
+      <div class="profile-content">
+        <section class="profile-content__form">
+          <h1 class="title">Profile</h1>
+          <form class="form">
+            <div class="form__section">
+              <label class="form__label" for="username">Username</label>
+              <input
+                class="form__input-control"
+                id="username"
+                type="text"
+                name="username"
+              />
+            </div>
+
+            <div class="form__section">
+              <label class="form__label" for="email">Email</label>
+              <input
+                class="form__input-control"
+                id="email"
+                type="text"
+                name="email"
+              />
+            </div>
+
+            <div class="form__section">
+              <label class="form__label" for="password">Password</label>
+              <input
+                class="form__input-control"
+                id="password"
+                type="password"
+                name="password"
+              />
+            </div>
+
+            <div class="form__section">
+              <label class="form__label" for="passwordConfirm">Password</label>
+              <input
+                class="form__input-control"
+                id="passwordConfirm"
+                type="password"
+                name="passwordConfirm"
+              />
+            </div>
+
+            <div class="form__section">
+              <button class="form__submit-btn" type="submit">Update</button>
+            </div>
+
+            <div class="form__section">
+              <button class="form__submit-btn" type="submit">Remove</button>
+            </div>
+          </form>
+        </section>
+        <section class="profile-content__hero">
+          <div class="hero">
+            <img class="hero__img" src="./images/hero.svg" alt="" />
+          </div>
+        </section>
+      </div>
     </main>
-    <footer>
-      <p>Copyright Information Example</p>
+    <footer class="footer">
+      <p class="copyright-notice">Copyright Information Example</p>
     </footer>
   </body>
 </html>
