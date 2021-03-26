@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/harounach/eerkel-frontend/issues"
   },
-  "homepage": "https://github.com/harounach/eerkel-frontend#readme"
+  "homepage": "https://github.com/harounach/eerkel-frontend#readme",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
 }
