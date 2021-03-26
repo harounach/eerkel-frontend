@@ -7,25 +7,69 @@
     <title>Friends List</title>
   </head>
   <body>
-    <header>
-      <div>Logo</div>
-      <div>Profile Link</div>
+    <!-- appbar -->
+    <header class="appbar">
+      <!-- logo -->
+      <a class="logo" href="home.html"
+        ><img class="logo__img" src="./images/logo.svg" alt="" />
+      </a>
+
+      <!-- Profile dropdown -->
+      <div class="profile-dropdown">
+        <div class="profile-dropdown__img">Avatar</div>
+        <div class="profile-dropdown__content">
+          <a href="#" class="profile-dropdown__link">Profile</a>
+          <a href="#" class="profile-dropdown__link">Logout</a>
+        </div>
+      </div>
     </header>
-    <main>
-      <h1>Friends List</h1>
-      <form>
-        <label for="search">Search</label>
-        <input id="search" type="text" name="search" />
-      </form>
-      <h2>Friends List</h2>
-      <div>
-        <div>Friend 1</div>
-        <div>Friend 2</div>
-        <div>Friend 3</div>
+
+    <!-- main -->
+    <main class="main">
+      <div class="friendslist-content">
+        <section class="friendslist-content__form">
+          <form>
+            <label for="search">Search</label>
+            <input id="search" type="text" name="search" />
+          </form>
+        </section>
+        <section class="friendslist-content__list">
+          <h2 class="subtitle">Friends List</h2>
+          <div class="friends">
+            <!-- item 1 -->
+            <div class="friends__item">
+              <div class="friends__avatar">
+                <img src="" alt="" class="friends__img" />
+              </div>
+              <span class="friends__name">Friend 1</span>
+              <button class="friends__btn">+</button>
+            </div>
+
+            <!-- item 2 -->
+            <div class="friends__item">
+              <div class="friends__avatar">
+                <img src="" alt="" class="friends__img" />
+              </div>
+              <span class="friends__name">Friend 2</span>
+              <button class="friends__btn">+</button>
+            </div>
+
+            <!-- item 3 -->
+            <div class="friends__item">
+              <div class="friends__avatar">
+                <img src="" alt="" class="friends__img" />
+              </div>
+              <span class="friends__name">Friend 3</span>
+              <button class="friends__btn">+</button>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
-    <footer>
-      <p>Copyright Information Example</p>
+
+    <!-- footer -->
+    <footer class="footer">
+      <p class="copyright-notice">Copyright Information Example</p>
     </footer>
   </body>
 </html>
