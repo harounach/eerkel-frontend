@@ -7,25 +7,76 @@
     <title>Register</title>
   </head>
   <body>
-    <header><div>Logo</div></header>
-    <main>
-      <h1>Register</h1>
-      <form>
-        <label for="username">Username</label>
-        <input id="username" type="text" name="username" />
-        <label for="email">Email</label>
-        <input id="email" type="text" name="email" />
-        <label for="password">Password</label>
-        <input id="password" type="password" name="password" />
-        <label for="passwordConfirm">Password</label>
-        <input id="passwordConfirm" type="password" name="passwordConfirm" />
-        <button type="submit">Register</button>
-      </form>
-      <div>Hero Image</div>
-      <p>Already have an account? <a href="#">Login</a></p>
+    <header class="appbar">
+      <!-- logo -->
+      <a class="logo" href="home.html"
+        ><img class="logo__img" src="./images/logo.svg" alt="" />
+      </a>
+    </header>
+    <main class="main">
+      <div class="register-content">
+        <section class="register-content__form">
+          <h1 class="title">Register</h1>
+          <form class="form">
+            <div class="form__section">
+              <label class="form__label" for="username">Username</label>
+              <input
+                class="form__input-control"
+                id="username"
+                type="text"
+                name="username"
+              />
+            </div>
+
+            <div class="form__section">
+              <label class="form__label" for="email">Email</label>
+              <input
+                class="form__input-control"
+                id="email"
+                type="text"
+                name="email"
+              />
+            </div>
+
+            <div class="form__section">
+              <label class="form__label" for="password">Password</label>
+              <input
+                class="form__input-control"
+                id="password"
+                type="password"
+                name="password"
+              />
+            </div>
+
+            <div class="form__section">
+              <label class="form__label" for="passwordConfirm">Password</label>
+              <input
+                class="form__input-control"
+                id="passwordConfirm"
+                type="password"
+                name="passwordConfirm"
+              />
+            </div>
+
+            <div class="form__section">
+              <button class="form__submit-btn" type="submit">Register</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="register-content__hero">
+          <div class="hero">
+            <img class="hero__img" src="./images/hero.svg" alt="" />
+          </div>
+          <p class="goto-auth">
+            Already have an account?
+            <a class="goto-auth__link" href="#">Login</a>
+          </p>
+        </section>
+      </div>
     </main>
-    <footer>
-      <p>Copyright Information Example</p>
+    <footer class="footer">
+      <p class="copyright-notice">Copyright Information Example</p>
     </footer>
   </body>
 </html>
