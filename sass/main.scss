@@ -1,13 +1,15 @@
 @use "./abstracts/variables";
 @use "./abstracts/functions";
 @use "./abstracts/mixins";
+@use "./abstracts/placeholders";
+@use "./abstracts/animations";
 
 @use "./vendors/bootstrap";
 
+@use "./base/base";
 @use "./base/reset";
 @use "./base/typography";
 
-@use "./layout/body";
 @use "./layout/navigation";
 @use "./layout/grid";
 @use "./layout/header";
