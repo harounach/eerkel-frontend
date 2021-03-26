@@ -7,38 +7,119 @@
     <title>Chat</title>
   </head>
   <body>
-    <header>
-      <div>Logo</div>
-      <div>Profile Link</div>
-    </header>
-    <main>
-      <h1>Chat</h1>
+    <!-- appbar -->
+    <header class="appbar">
+      <!-- logo -->
+      <a class="logo" href="home.html"
+        ><img class="logo__img" src="./images/logo.svg" alt="" />
+      </a>
 
-      <div>
-        <h2>Friends List</h2>
-        <div>
-          <div>Friend 1</div>
-          <div>Friend 2</div>
-          <div>Friend 3</div>
+      <!-- Profile dropdown -->
+      <div class="profile-dropdown">
+        <div class="profile-dropdown__img">Avatar</div>
+        <div class="profile-dropdown__content">
+          <a href="#" class="profile-dropdown__link">Profile</a>
+          <a href="#" class="profile-dropdown__link">Logout</a>
         </div>
-        <a href="#">Find Friends</a>
       </div>
-      <div>
-        <div>
-          <div>Message 1</div>
-          <div>Message 2</div>
-          <div>Message 3</div>
-          <div>Message 4</div>
-        </div>
-        <form>
-          <label for="search">Message</label>
-          <input id="message" type="text" name="message" />
-          <button type="submit">Send</button>
-        </form>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+      <div class="chat-content">
+        <section class="chat-content__messages">
+          <div class="message-list">
+            <!-- item 1 -->
+            <div class="message-list__item">
+              <div class="message-list__avatar">
+                <img src="" alt="" class="message-list__img" />
+              </div>
+              <div class="message-list__message-buble">
+                <p class="message-list__message">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Cumque vero voluptate cum. Fugiat rem ex quo provident!
+                </p>
+              </div>
+            </div>
+
+            <!-- item 2 -->
+            <div class="message-list__item">
+              <div class="message-list__avatar">
+                <img src="" alt="" class="message-list__img" />
+              </div>
+              <div class="message-list__message-buble">
+                <p class="message-list__message">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Cumque vero voluptate cum. Fugiat rem ex quo provident!
+                </p>
+              </div>
+            </div>
+
+            <!-- item 3 -->
+            <div class="message-list__item">
+              <div class="message-list__avatar">
+                <img src="" alt="" class="message-list__img" />
+              </div>
+              <div class="message-list__message-buble">
+                <p class="message-list__message">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Cumque vero voluptate cum. Fugiat rem ex quo provident!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- chat form -->
+          <form class="chat-form">
+            <input
+              class="chat-form__input-control"
+              id="message"
+              type="text"
+              name="message"
+            />
+            <button class="chat-form__input-control" type="submit">Send</button>
+          </form>
+        </section>
+        <aside class="chat-content__friends">
+          <div class="chat-friends">
+            <h2 class="subtitle">Friends List</h2>
+            <div class="chat-friends-list">
+              <!-- item 1 -->
+              <div class="chat-friends-list__item">
+                <div class="chat-friends-list__avatar">
+                  <img src="" alt="" class="chat-friends-list__img" />
+                  <span class="chat-friends-list__status"></span>
+                </div>
+                <span class="chat-friends-list__name">Friend 1</span>
+              </div>
+
+              <!-- item 1 -->
+              <div class="chat-friends-list__item">
+                <div class="chat-friends-list__avatar">
+                  <img src="" alt="" class="chat-friends-list__img" />
+                  <span class="chat-friends-list__status"></span>
+                </div>
+                <span class="chat-friends-list__name">Friend 1</span>
+              </div>
+
+              <!-- item 1 -->
+              <div class="chat-friends-list__item">
+                <div class="chat-friends-list__avatar">
+                  <img src="" alt="" class="chat-friends-list__img" />
+                  <span class="chat-friends-list__status"></span>
+                </div>
+                <span class="chat-friends-list__name">Friend 1</span>
+              </div>
+            </div>
+            <a class="find-friends-btn" href="#">Find Friends</a>
+          </div>
+        </aside>
       </div>
     </main>
-    <footer>
-      <p>Copyright Information Example</p>
+
+    <!-- footer -->
+    <footer class="footer">
+      <p class="copyright-notice">Copyright Information Example</p>
     </footer>
   </body>
 </html>
