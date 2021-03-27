@@ -1,19 +1,37 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
 
-%btn {
+.btn {
   min-width: 4rem;
   height: 2.25rem;
   border: none;
   border-radius: 0.25rem;
   background-color: variables.$secondary-color;
   color: variables.$on-secondary-color;
-
   font-size: 1rem;
+  font-weight: 600;
   text-transform: uppercase;
   padding-left: 1rem;
   padding-right: 1rem;
 
   // box-shadow
   @include mixins.btn-shadow;
+}
+
+.btn-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &--left {
+    justify-content: flex-start;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--right {
+    justify-content: flex-end;
+  }
 }
