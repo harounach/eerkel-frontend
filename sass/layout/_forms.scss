@@ -29,5 +29,9 @@
     height: 3rem;
     border: 3px solid variables.$primary-color;
     border-radius: 0.25rem;
+
+    &:focus {
+      border-width: 4px;
+    }
   }
 }
