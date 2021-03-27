@@ -1,0 +1,38 @@
+@use "../abstracts/variables";
+
+.register-content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  // register-content__form
+  &__form {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  // register-content__hero
+  &__hero {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+.register-hero {
+  display: none;
+  &__img {
+  }
+}
+
+.goto-auth {
+  text-align: center;
+  margin-bottom: 2rem;
+  &__link {
+    color: variables.$secondary-color;
+    font-weight: 700;
+  }
+}
