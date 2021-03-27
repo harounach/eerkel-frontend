@@ -1,9 +1,8 @@
-@use "../abstracts/functions";
-
+// font sizes
 $base-font: 16px Helvetica, sans-serif;
-$body-font-size: functions.pxToRem(16px);
-$headline-font-size: functions.pxToRem(24px);
-$subheadline-font-size: functions.pxToRem(16px);
+$body-font-size: 1rem;
+$headline-font-size: 1.5rem;
+$subheadline-font-size: 1rem;
 
 // colors
 $text-high-color: rgba(#000000, 0.87);

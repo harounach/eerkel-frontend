@@ -1,4 +1,3 @@
-@use "../abstracts/functions";
 @use "../components/buttons";
 
 // home-content
@@ -12,12 +11,12 @@
   // home-content__copy
   &__copy {
     width: 100%;
-    padding: functions.pxToRem(16px);
+    padding: 1rem;
   }
 
   &__hero {
     width: 100%;
-    padding: functions.pxToRem(16px);
+    padding: 1rem;
   }
 }
 .hero {
