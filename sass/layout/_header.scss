@@ -100,5 +100,9 @@
     &:hover {
       background-color: rgba($color: variables.$on-surface-color, $alpha: 0.04);
     }
+
+    &:active {
+      background-color: rgba($color: variables.$on-surface-color, $alpha: 0.12);
+    }
   }
 }
