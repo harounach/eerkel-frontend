@@ -13,9 +13,23 @@
   text-transform: uppercase;
   padding-left: 1rem;
   padding-right: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 
   // box-shadow
   @include mixins.btn-shadow;
+
+  &:hover {
+    @include mixins.btn-hover-shadow;
+  }
+
+  &:active {
+    @include mixins.btn-hover-shadow;
+  }
+
+  &:focus {
+    @include mixins.btn-hover-shadow;
+  }
 }
 
 .btn-wrapper {
