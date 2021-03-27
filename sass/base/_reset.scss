@@ -1,5 +1,6 @@
 @use "./typography";
-button {
+button,
+input {
   font-family: typography.$base-font;
   font-size: typography.$base-font-size;
 }

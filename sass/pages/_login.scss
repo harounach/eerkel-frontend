@@ -1,0 +1,32 @@
+@use "../abstracts/variables";
+
+.login-content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  // login-content__form
+  &__form {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  // login-content__hero
+  &__hero {
+    width: 100%;
+    padding: 1rem;
+    display: none;
+  }
+}
+
+.goto-auth {
+  text-align: center;
+  &__link {
+    color: variables.$secondary-color;
+    font-weight: 700;
+  }
+}
