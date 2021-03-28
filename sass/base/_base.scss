@@ -41,4 +41,8 @@ body {
 }
 
 .subtitle {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: typography.$text-low-color;
+  margin: 0.5rem 0;
 }
