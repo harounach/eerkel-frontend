@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Friends List</title>
   </head>
   <body>
     <!-- appbar -->
-    <header class="appbar">
+    <header class="appbar appbar--space-between">
       <!-- logo -->
       <a class="logo" href="home.html"
         ><img class="logo__img" src="./images/logo.svg" alt="" />
@@ -17,7 +22,13 @@
 
       <!-- Profile dropdown -->
       <div class="profile-dropdown">
-        <div class="profile-dropdown__img">Avatar</div>
+        <div class="profile-dropdown__img-wrapper">
+          <img
+            class="profile-dropdown__img"
+            src="./images/profile.jpg"
+            alt=""
+          />
+        </div>
         <div class="profile-dropdown__content">
           <a href="#" class="profile-dropdown__link">Profile</a>
           <a href="#" class="profile-dropdown__link">Logout</a>
