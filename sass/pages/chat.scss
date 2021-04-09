@@ -22,5 +22,12 @@
 
     // z-index
     @include mixins.z-index("drawer");
+
+    transform: translateX(-100%);
+
+    // chat-content__friends--open
+    &--open {
+      transform: translateX(0);
+    }
   }
 }
