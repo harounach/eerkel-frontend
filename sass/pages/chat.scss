@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 // chat-content
 .chat-content {
@@ -15,6 +16,11 @@
 
   // chat-content__friends
   &__friends {
-    width: 100%;
+    width: calc(100% - 3.5rem);
+    height: 100%;
+    position: absolute;
+
+    // z-index
+    @include mixins.z-index("drawer");
   }
 }

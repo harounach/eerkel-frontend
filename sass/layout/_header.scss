@@ -10,9 +10,11 @@
   padding-right: 1rem;
   background-color: variables.$primary-color;
   position: relative;
-  z-index: 4;
   // add box-shadow
   @include mixins.appbar-shadow;
+
+  // z-index
+  @include mixins.z-index("appbar");
 
   // flex
   display: flex;

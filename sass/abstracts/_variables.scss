@@ -12,4 +12,11 @@ $on-background-color: #000000;
 $on-surface-color: #000000;
 $on-error-color: #ffffff;
 
-// spacing
+// elevations
+$elevations: (
+  no-elevation: 0,
+  status: 2,
+  appbar: 4,
+  bottom-bar: 4,
+  drawer: 16,
+);
