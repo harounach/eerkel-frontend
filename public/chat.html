@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- appbar -->
-    <header class="appbar">
+    <header class="appbar appbar--space-between">
       <!-- logo -->
       <a class="logo" href="home.html"
         ><img class="logo__img" src="./images/App-Icon.svg" alt="" />
@@ -17,7 +17,13 @@
 
       <!-- Profile dropdown -->
       <div class="profile-dropdown">
-        <div class="profile-dropdown__img">Avatar</div>
+        <div class="profile-dropdown__img-wrapper">
+          <img
+            class="profile-dropdown__img"
+            src="./images/profile.jpg"
+            alt=""
+          />
+        </div>
         <div class="profile-dropdown__content">
           <a href="#" class="profile-dropdown__link">Profile</a>
           <a href="#" class="profile-dropdown__link">Logout</a>
@@ -31,12 +37,16 @@
         <section class="chat-content__messages">
           <div class="message-list">
             <!-- item 1 -->
-            <div class="message-list__item">
-              <div class="message-list__avatar">
-                <img src="" alt="" class="message-list__img" />
+            <div class="message">
+              <div class="message__avatar-wrapper">
+                <img
+                  src="./images/profile.jpg"
+                  alt=""
+                  class="message__avatar"
+                />
               </div>
-              <div class="message-list__message-buble">
-                <p class="message-list__message">
+              <div class="message__message-buble">
+                <p class="message__text">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Cumque vero voluptate cum. Fugiat rem ex quo provident!
                 </p>
@@ -44,12 +54,12 @@
             </div>
 
             <!-- item 2 -->
-            <div class="message-list__item">
-              <div class="message-list__avatar">
-                <img src="" alt="" class="message-list__img" />
+            <div class="message">
+              <div class="message__avatar-wrapper">
+                <img src="./images/user01.jpg" alt="" class="message__avatar" />
               </div>
-              <div class="message-list__message-buble">
-                <p class="message-list__message">
+              <div class="message__message-buble">
+                <p class="message__text">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Cumque vero voluptate cum. Fugiat rem ex quo provident!
                 </p>
@@ -57,12 +67,29 @@
             </div>
 
             <!-- item 3 -->
-            <div class="message-list__item">
-              <div class="message-list__avatar">
-                <img src="" alt="" class="message-list__img" />
+            <div class="message">
+              <div class="message__avatar-wrapper">
+                <img
+                  src="./images/profile.jpg"
+                  alt=""
+                  class="message__avatar"
+                />
               </div>
-              <div class="message-list__message-buble">
-                <p class="message-list__message">
+              <div class="message__message-buble">
+                <p class="message__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Cumque vero voluptate cum. Fugiat rem ex quo provident!
+                </p>
+              </div>
+            </div>
+
+            <!-- item 4 -->
+            <div class="message">
+              <div class="message__avatar-wrapper">
+                <img src="./images/user01.jpg" alt="" class="message__avatar" />
+              </div>
+              <div class="message__message-buble">
+                <p class="message__text">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Cumque vero voluptate cum. Fugiat rem ex quo provident!
                 </p>

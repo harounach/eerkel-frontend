@@ -1,0 +1,46 @@
+@use "../abstracts/variables";
+
+// message-list
+.message-list {
+  width: 100%;
+  margin: 0;
+  padding: 1.5rem 0.5rem 0.5rem;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 1rem;
+}
+
+// message
+.message {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  // message__avatar-wrapper
+  &__avatar-wrapper {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  // message__avatar
+  &__avatar {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  // message__message-buble
+  &__message-buble {
+    flex-grow: 1;
+    margin-left: 1rem;
+  }
+
+  // message__text
+  &__text {
+  }
+}

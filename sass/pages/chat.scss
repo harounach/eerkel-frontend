@@ -1,0 +1,20 @@
+@use "../abstracts/variables";
+
+// chat-content
+.chat-content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  // chat-content__messages
+  &__messages {
+    width: 100%;
+  }
+
+  // chat-content__friends
+  &__friends {
+    width: 100%;
+  }
+}

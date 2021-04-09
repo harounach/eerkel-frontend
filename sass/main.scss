@@ -21,12 +21,14 @@
 @use "./components/carousel";
 @use "./components/slider";
 @use "./components/friends";
+@use "./components/messages.scss";
 
 @use "./pages/home";
 @use "./pages/login";
 @use "./pages/register";
 @use "./pages/profile";
 @use "./pages/friendslist";
+@use "./pages/chat.scss";
 
 @use "./themes/theme";
 @use "./themes/admin";
