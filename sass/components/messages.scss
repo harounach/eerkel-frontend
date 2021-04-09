@@ -8,6 +8,7 @@
   display: grid;
   grid-template-columns: 100%;
   gap: 1rem;
+  background-color: variables.$surface-color;
 }
 
 // message
@@ -38,9 +39,30 @@
   &__message-buble {
     flex-grow: 1;
     margin-left: 1rem;
+    background-color: variables.$secondary-color;
+    color: variables.$on-secondary-color;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    position: relative;
+
+    // bubble arrow
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.125;
+      left: -1.5rem;
+      width: 0;
+      height: 0;
+      border-top: 1rem solid transparent;
+      border-bottom: 1rem solid transparent;
+      border-left: 1rem solid transparent;
+      border-right: 1rem solid variables.$secondary-color;
+    }
   }
 
   // message__text
   &__text {
+    margin: 0;
+    padding: 0;
   }
 }
