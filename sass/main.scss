@@ -24,12 +24,12 @@
 @use "./components/messages.scss";
 @use "./components/chat-friends";
 
-@use "./pages/home";
-@use "./pages/login";
-@use "./pages/register";
-@use "./pages/profile";
-@use "./pages/friendslist";
-@use "./pages/chat.scss";
+@use "./pages/home-page";
+@use "./pages/login-page";
+@use "./pages/register-page";
+@use "./pages/profile-page";
+@use "./pages/friendslist-page";
+@use "./pages/chat-page.scss";
 
 @use "./themes/theme";
 @use "./themes/admin";

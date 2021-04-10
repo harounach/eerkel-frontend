@@ -1,5 +1,24 @@
 @use "../abstracts/variables";
 
+// friendslist-page
+.friendslist-page {
+  // friendslist-page__body
+  &__body {
+  }
+
+  // friendslist-page__header
+  &__header {
+  }
+
+  // friendslist-page__main
+  &__main {
+  }
+
+  // friendslist-page__footer
+  &__footer {
+  }
+}
+
 .friendslist-content {
   width: 100%;
   margin: 0;

@@ -1,6 +1,25 @@
 @use "../abstracts/variables";
 
-.login-content {
+// profile-page
+.profile-page {
+  // profile-page__body
+  &__body {
+  }
+
+  // profile-page__header
+  &__header {
+  }
+
+  // profile-page__main
+  &__main {
+  }
+
+  // profile-page__footer
+  &__footer {
+  }
+}
+
+.profile-content {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -22,17 +41,8 @@
   }
 }
 
-.login-hero {
+.profile-hero {
   display: none;
   &__img {
-  }
-}
-
-.goto-auth {
-  text-align: center;
-  margin-bottom: 2rem;
-  &__link {
-    color: variables.$secondary-color;
-    font-weight: 700;
   }
 }

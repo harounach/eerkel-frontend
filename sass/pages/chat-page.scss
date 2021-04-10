@@ -1,6 +1,25 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
 
+// chat-page
+.chat-page {
+  // chat-page__body
+  &__body {
+  }
+
+  // chat-page__header
+  &__header {
+  }
+
+  // chat-page__main
+  &__main {
+  }
+
+  // chat-page__footer
+  &__footer {
+  }
+}
+
 // chat-content
 .chat-content {
   width: 100%;
