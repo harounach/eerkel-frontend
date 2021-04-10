@@ -3,12 +3,17 @@
 
 // chat-page
 .chat-page {
+  width: 100%;
   // chat-page__body
   &__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   // chat-page__header
   &__header {
+    flex-shrink: 0;
   }
 
   // chat-page__main
@@ -17,6 +22,9 @@
 
   // chat-page__footer
   &__footer {
+    margin-top: auto;
+    // hide on mobile
+    display: none;
   }
 }
 
@@ -49,9 +57,4 @@
       transform: translateX(0);
     }
   }
-}
-
-.chat-footer {
-  // hide on mobile
-  display: none;
 }
