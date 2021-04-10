@@ -28,3 +28,45 @@
 @mixin z-index($elevation) {
   z-index: map.get(variables.$elevations, $elevation);
 }
+
+// tablet
+@mixin tablet {
+  @media screen and (min-width: map.get(variables.$breakpoints, "tablet")) {
+    @content;
+  }
+}
+
+// large tablet
+@mixin large-tablet {
+  @media screen and (min-width: map.get(variables.$breakpoints, "large-tablet")) {
+    @content;
+  }
+}
+
+// extra large tablet
+@mixin xlarge-tablet {
+  @media screen and (min-width: map.get(variables.$breakpoints, "xlarge-tablet")) {
+    @content;
+  }
+}
+
+// small desktop
+@mixin small-desktop {
+  @media screen and (min-width: map.get(variables.$breakpoints, "small-desktop")) {
+    @content;
+  }
+}
+
+// desktop
+@mixin desktop {
+  @media screen and (min-width: map.get(variables.$breakpoints, "desktop")) {
+    @content;
+  }
+}
+
+// large desktop
+@mixin large-desktop {
+  @media screen and (min-width: map.get(variables.$breakpoints, "large-desktop")) {
+    @content;
+  }
+}
