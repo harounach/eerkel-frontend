@@ -2,12 +2,19 @@
 
 // profile-page
 .profile-page {
+  width: 100%;
+  height: 100%;
   // profile-page__body
   &__body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   // profile-page__header
   &__header {
+    flex-shrink: 0;
   }
 
   // profile-page__main
@@ -16,6 +23,7 @@
 
   // profile-page__footer
   &__footer {
+    margin-top: auto;
   }
 }
 
@@ -30,19 +38,18 @@
   &__form {
     width: 100%;
     padding: 1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin: 0;
   }
 
   // login-content__hero
   &__hero {
     width: 100%;
     padding: 1rem;
+    display: none;
   }
 }
 
 .profile-hero {
-  display: none;
   &__img {
   }
 }
