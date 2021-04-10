@@ -2,12 +2,17 @@
 
 // friendslist-page
 .friendslist-page {
+  width: 100%;
   // friendslist-page__body
   &__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   // friendslist-page__header
   &__header {
+    flex-shrink: 0;
   }
 
   // friendslist-page__main
@@ -16,6 +21,7 @@
 
   // friendslist-page__footer
   &__footer {
+    margin-top: auto;
   }
 }
 
