@@ -3,9 +3,11 @@
 // friendslist-page
 .friendslist-page {
   width: 100%;
+  height: 100%;
   // friendslist-page__body
   &__body {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -17,22 +19,14 @@
 
   // friendslist-page__main
   &__main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
   }
 
-  // friendslist-page__footer
-  &__footer {
-    margin-top: auto;
-  }
-}
-
-.friendslist-content {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-
-  // friendslist-content__form
+  // friendslist-page__form
   &__form {
     width: 100%;
     padding: 1rem;
@@ -40,9 +34,14 @@
     margin-bottom: 1rem;
   }
 
-  // friendslist-content__list
+  // friendslist-page__list
   &__list {
     width: 100%;
     padding: 1rem;
+  }
+
+  // friendslist-page__footer
+  &__footer {
+    margin-top: auto;
   }
 }
