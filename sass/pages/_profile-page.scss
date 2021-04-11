@@ -19,37 +19,38 @@
 
   // profile-page__main
   &__main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
   }
 
-  // profile-page__footer
-  &__footer {
-    margin-top: auto;
-  }
-}
-
-.profile-content {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-
-  // login-content__form
+  // profile-page__form
   &__form {
     width: 100%;
     padding: 1rem;
     margin: 0;
   }
 
-  // login-content__hero
-  &__hero {
+  // profile-page__btn-wrapper
+  &__btn-wrapper {
+    justify-content: space-between;
+  }
+
+  // profile-page__hero-wrapper
+  &__hero-wrapper {
     width: 100%;
     padding: 1rem;
     display: none;
   }
-}
 
-.profile-hero {
-  &__img {
+  // profile-page__hero
+  &__hero {
+  }
+
+  // profile-page__footer
+  &__footer {
+    margin-top: auto;
   }
 }
