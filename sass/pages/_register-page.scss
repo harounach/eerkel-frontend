@@ -19,46 +19,41 @@
 
   // register-page__main
   &__main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
   }
 
-  // register-page__footer
-  &__footer {
-    margin-top: auto;
-  }
-}
-
-.register-content {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-
-  // register-content__form
+  // register-page__form
   &__form {
     width: 100%;
     padding: 1rem;
     margin: 0rem;
   }
 
-  // register-content__hero
-  &__hero {
+  // register-page__btn-wrapper
+  &__btn-wrapper {
+    justify-content: center;
+  }
+
+  // register-page__hero-wrapper
+  &__hero-wrapper {
     width: 100%;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // register-page__hero
+  &__hero {
     display: none;
   }
-}
 
-.register-hero {
-  &__img {
-  }
-}
-
-.goto-auth {
-  text-align: center;
-  margin-bottom: 2rem;
-  &__link {
-    color: variables.$secondary-color;
-    font-weight: 700;
+  // register-page__footer
+  &__footer {
+    margin-top: auto;
   }
 }
