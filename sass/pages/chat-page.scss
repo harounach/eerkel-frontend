@@ -18,30 +18,19 @@
 
   // chat-page__main
   &__main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
   }
 
-  // chat-page__footer
-  &__footer {
-    margin-top: auto;
-    // hide on mobile
-    display: none;
-  }
-}
-
-// chat-content
-.chat-content {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-
-  // chat-content__messages
+  // chat-page__messages
   &__messages {
     width: 100%;
   }
 
-  // chat-content__friends
+  // chat-page__friends
   &__friends {
     width: calc(100% - 3.5rem);
     height: 100%;
@@ -56,5 +45,17 @@
     &--open {
       transform: translateX(0);
     }
+  }
+
+  // chat-page__btn-wrapper
+  &__btn-wrapper {
+    justify-content: center;
+  }
+
+  // chat-page__footer
+  &__footer {
+    margin-top: auto;
+    // hide on mobile
+    display: none;
   }
 }
