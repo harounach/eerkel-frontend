@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 // profile-page
 .profile-page {
@@ -24,6 +25,12 @@
     padding: 0;
     display: flex;
     flex-direction: column;
+
+    // tablet
+    @include mixins.tablet {
+      flex-direction: row;
+      flex-grow: 1;
+    }
   }
 
   // profile-page__form
@@ -31,6 +38,13 @@
     width: 100%;
     padding: 1rem;
     margin: 0;
+
+    // tablet
+    @include mixins.tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   // profile-page__btn-wrapper
@@ -42,11 +56,24 @@
   &__hero-wrapper {
     width: 100%;
     padding: 1rem;
-    display: none;
+
+    // tablet
+    @include mixins.tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   // profile-page__hero
   &__hero {
+    display: none;
+
+    // tablet
+    @include mixins.tablet {
+      display: block;
+    }
   }
 
   // profile-page__footer
