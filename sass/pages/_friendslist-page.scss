@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 // friendslist-page
 .friendslist-page {
@@ -24,6 +25,11 @@
     padding: 0;
     display: flex;
     flex-direction: column;
+
+    // tablet
+    @include mixins.tablet {
+      padding: 0 15%;
+    }
   }
 
   // friendslist-page__form
