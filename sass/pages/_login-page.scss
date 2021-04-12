@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 // login-page
 .login-page {
@@ -24,6 +25,12 @@
     padding: 0;
     display: flex;
     flex-direction: column;
+
+    // tablet
+    @include mixins.tablet {
+      flex-direction: row;
+      flex-grow: 1;
+    }
   }
 
   // login-page__form
@@ -32,6 +39,14 @@
     padding: 1rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+
+    // tablet
+    @include mixins.tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 0;
+    }
   }
 
   // login-page__btn-wrapper
@@ -46,11 +61,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    // tablet
+    @include mixins.tablet {
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
   }
 
   // login-page__hero
   &__hero {
     display: none;
+
+    // tablet
+    @include mixins.tablet {
+      display: block;
+    }
   }
 
   // login-page__footer

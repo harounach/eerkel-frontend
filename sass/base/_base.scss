@@ -1,5 +1,6 @@
 @use "../abstracts/variables";
 @use "./typography";
+@use "../abstracts/mixins";
 
 *,
 *::before,
@@ -38,6 +39,10 @@ body {
 }
 
 .title {
+  // tablet
+  @include mixins.tablet {
+    margin-top: 0;
+  }
 }
 
 .subtitle {
@@ -51,6 +56,11 @@ body {
 .goto-auth {
   text-align: center;
   margin-bottom: 2rem;
+
+  // tablet
+  @include mixins.tablet {
+    margin-bottom: 1rem;
+  }
 
   // goto-auth__link
   &__link {
