@@ -30,6 +30,7 @@ body {
   color: typography.$text-high-color;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 1rem;
 
   // large tablet
   @include mixins.large-tablet {
@@ -42,6 +43,11 @@ body {
   font-size: typography.$subheadline-font-size;
   font-weight: 600;
   color: typography.$text-medium-color;
+
+  // large tablet
+  @include mixins.large-tablet {
+    margin-bottom: 3rem;
+  }
 }
 
 .title {

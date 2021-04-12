@@ -15,4 +15,10 @@
     width: 19rem;
     height: 19rem;
   }
+
+  // large-desktop
+  @include mixins.large-desktop {
+    width: 22rem;
+    height: 22rem;
+  }
 }

@@ -36,6 +36,12 @@
       padding-left: 2rem;
       padding-right: 2rem;
     }
+
+    // small-desktop
+    @include mixins.small-desktop {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
   }
 
   // home-page__copy
