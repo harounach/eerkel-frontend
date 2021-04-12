@@ -30,6 +30,12 @@
     @include mixins.tablet {
       padding: 0 15%;
     }
+
+    // large-tablet
+    @include mixins.large-tablet {
+      padding-left: 17%;
+      padding-right: 17%;
+    }
   }
 
   // friendslist-page__form
@@ -38,12 +44,42 @@
     padding: 1rem;
     margin-top: 0;
     margin-bottom: 1rem;
+
+    // xlarge-tablet
+    @include mixins.xlarge-tablet {
+      padding-left: 17%;
+      padding-right: 17%;
+    }
   }
 
   // friendslist-page__list
   &__list {
     width: 100%;
     padding: 1rem;
+
+    // xlarge-tablet
+    @include mixins.xlarge-tablet {
+      padding-left: 12%;
+      padding-right: 12%;
+    }
+
+    // small-desktop
+    @include mixins.small-desktop {
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+
+    // desktop
+    @include mixins.desktop {
+      padding-left: 19%;
+      padding-right: 19%;
+    }
+
+    // large-desktop
+    @include mixins.large-desktop {
+      padding-left: 25%;
+      padding-right: 25%;
+    }
   }
 
   // friendslist-page__footer
