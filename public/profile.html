@@ -15,22 +15,26 @@
   <body class="profile-page__body">
     <header class="profile-page__header appbar appbar--space-between">
       <!-- logo -->
-      <a class="logo" href="home.html"
-        ><img class="logo__img" src="./images/App-Icon.svg" alt="" />
-      </a>
+      <div class="appbar__section">
+        <a class="logo" href="home.html"
+          ><img class="logo__img" src="./images/App-Icon.svg" alt="" />
+        </a>
+      </div>
 
       <!-- Profile dropdown -->
-      <div class="profile-dropdown">
-        <div class="profile-dropdown__img-wrapper">
-          <img
-            class="profile-dropdown__img"
-            src="./images/profile.jpg"
-            alt=""
-          />
-        </div>
-        <div class="profile-dropdown__content">
-          <a href="#" class="profile-dropdown__link">Profile</a>
-          <a href="#" class="profile-dropdown__link">Logout</a>
+      <div class="appbar__section appbar__section--right">
+        <div class="profile-dropdown">
+          <div class="profile-dropdown__img-wrapper">
+            <img
+              class="profile-dropdown__img"
+              src="./images/profile.jpg"
+              alt=""
+            />
+          </div>
+          <div class="profile-dropdown__content">
+            <a href="#" class="profile-dropdown__link">Profile</a>
+            <a href="#" class="profile-dropdown__link">Logout</a>
+          </div>
         </div>
       </div>
     </header>
