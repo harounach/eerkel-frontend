@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 // register-page
 .register-page {
@@ -24,6 +25,12 @@
     padding: 0;
     display: flex;
     flex-direction: column;
+
+    // tablet
+    @include mixins.tablet {
+      flex-direction: row;
+      flex-grow: 1;
+    }
   }
 
   // register-page__form
@@ -31,6 +38,13 @@
     width: 100%;
     padding: 1rem;
     margin: 0rem;
+
+    // tablet
+    @include mixins.tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   // register-page__btn-wrapper
@@ -45,11 +59,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    // tablet
+    @include mixins.tablet {
+      justify-content: center;
+    }
   }
 
   // register-page__hero
   &__hero {
     display: none;
+
+    // tablet
+    @include mixins.tablet {
+      display: block;
+    }
   }
 
   // register-page__footer
