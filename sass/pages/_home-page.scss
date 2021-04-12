@@ -30,6 +30,12 @@
       flex-direction: row;
       flex-grow: 1;
     }
+
+    // extra large tablet
+    @include mixins.xlarge-tablet {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
 
   // home-page__copy
