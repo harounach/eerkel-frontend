@@ -9,4 +9,10 @@
     width: 14rem;
     height: 14rem;
   }
+
+  // large tablet
+  @include mixins.large-tablet {
+    width: 19rem;
+    height: 19rem;
+  }
 }

@@ -30,6 +30,12 @@ body {
   color: typography.$text-high-color;
   text-align: center;
   margin-top: 0;
+
+  // large tablet
+  @include mixins.large-tablet {
+    font-size: 2.5rem;
+    text-align: left;
+  }
 }
 
 .subheadline {
