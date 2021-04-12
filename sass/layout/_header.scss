@@ -25,6 +25,12 @@
     justify-content: space-between;
   }
 
+  // tablet
+  @include mixins.tablet {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   // appbar__section
   &__section {
     margin: 0;
