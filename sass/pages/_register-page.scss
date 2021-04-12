@@ -31,6 +31,24 @@
       flex-direction: row;
       flex-grow: 1;
     }
+
+    // extra large tablet
+    @include mixins.xlarge-tablet {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    // small-desktop
+    @include mixins.small-desktop {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    // desktop
+    @include mixins.desktop {
+      padding-left: 8%;
+      padding-right: 8%;
+    }
   }
 
   // register-page__form
@@ -45,11 +63,27 @@
       flex-direction: column;
       justify-content: center;
     }
+
+    // small-desktop
+    @include mixins.small-desktop {
+      padding-left: 6%;
+    }
+
+    // desktop
+    @include mixins.desktop {
+      padding-left: 8%;
+      padding-right: 8%;
+    }
   }
 
   // register-page__btn-wrapper
   &__btn-wrapper {
     justify-content: center;
+
+    // tablet
+    @include mixins.tablet {
+      justify-content: flex-start;
+    }
   }
 
   // register-page__hero-wrapper
@@ -63,6 +97,7 @@
     // tablet
     @include mixins.tablet {
       justify-content: center;
+      margin-top: 1.5rem;
     }
   }
 
