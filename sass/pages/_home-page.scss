@@ -46,8 +46,9 @@
     @include mixins.large-tablet {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: flex-start;
+      padding-top: 5rem;
     }
   }
 
@@ -69,6 +70,13 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
+
+    // large tablet
+    @include mixins.large-tablet {
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 5rem;
+    }
   }
 
   // home-page__footer
