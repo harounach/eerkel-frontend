@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 // message-list
 .message-list {
@@ -9,6 +10,11 @@
   grid-template-columns: 100%;
   gap: 1rem;
   background-color: variables.$surface-color;
+  // tablet
+  @include mixins.tablet {
+    // box-shadow
+    @include mixins.surface-shadow;
+  }
 }
 
 // message

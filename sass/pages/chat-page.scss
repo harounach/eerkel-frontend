@@ -4,11 +4,24 @@
 // chat-page
 .chat-page {
   width: 100%;
+  height: 100%;
+
+  // large-tablet
+  @include mixins.large-tablet {
+    height: 100%;
+  }
+
   // chat-page__body
   &__body {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+
+    // large-tablet
+    @include mixins.large-tablet {
+      height: 100%;
+    }
   }
 
   // chat-page__header
@@ -23,11 +36,51 @@
     padding: 0;
     display: flex;
     flex-direction: column;
+
+    flex-grow: 1;
+    // large-tablet
+    @include mixins.large-tablet {
+      flex-direction: row-reverse;
+    }
   }
 
   // chat-page__messages
   &__messages {
     width: 100%;
+
+    // tablet
+    @include mixins.tablet {
+      padding: 1.5rem 5%;
+    }
+
+    // large-tablet
+    @include mixins.large-tablet {
+      width: 65%;
+      padding: 1rem;
+    }
+  }
+
+  // chat-page__message-wrapper
+  &__message-wrapper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 64px;
+  }
+
+  // chat-page__chat-form
+  &__chat-form {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    // large-tablet
+    @include mixins.large-tablet {
+      position: static;
+      // box-shadow
+      @include mixins.surface-shadow;
+      margin-top: 1rem;
+    }
   }
 
   // chat-page__friends
@@ -45,6 +98,14 @@
     &--open {
       transform: translateX(0);
     }
+
+    // large-tablet
+    @include mixins.large-tablet {
+      width: 35%;
+      position: static;
+      transform: translateX(0);
+      padding: 1rem;
+    }
   }
 
   // chat-page__btn-wrapper
@@ -57,5 +118,11 @@
     margin-top: auto;
     // hide on mobile
     display: none;
+
+    // large-tablet
+    @include mixins.large-tablet {
+      display: flex;
+      margin-top: auto;
+    }
   }
 }

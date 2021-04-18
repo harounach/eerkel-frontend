@@ -7,6 +7,12 @@
   height: 100%;
   padding: 1rem;
   background-color: variables.$surface-color;
+
+  // large-tablet
+  @include mixins.large-tablet {
+    // box-shadow
+    @include mixins.surface-shadow;
+  }
 }
 
 // chat-friends-list
