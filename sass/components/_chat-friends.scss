@@ -1,20 +1,6 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
 
-// chat-friends
-.chat-friends {
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  background-color: variables.$surface-color;
-
-  // large-tablet
-  @include mixins.large-tablet {
-    // box-shadow
-    @include mixins.surface-shadow;
-  }
-}
-
 // chat-friends-list
 .chat-friends-list {
   width: 100%;
