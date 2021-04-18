@@ -27,12 +27,16 @@
   // chat-page__header
   &__header {
     flex-shrink: 0;
+    position: fixed;
+    top: 0;
+    // z-index
+    @include mixins.z-index("appbar");
   }
 
   // chat-page__main
   &__main {
     width: 100%;
-    margin: 0;
+    margin: 3.5rem 0 0;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -105,6 +109,8 @@
       position: static;
       transform: translateX(0);
       padding: 1rem;
+      // z-index
+      @include mixins.z-index("no-elevation");
     }
   }
 
