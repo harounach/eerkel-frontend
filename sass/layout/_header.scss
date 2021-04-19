@@ -137,7 +137,7 @@
     width: 100%;
     height: 100%;
     cursor: pointer;
-    background-color: brown;
+    background-color: variables.$secondary-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,6 +148,7 @@
     font-size: 1rem;
     font-weight: 700;
     color: #ffffff;
+    text-transform: uppercase;
   }
 
   // profile-dropdown__content
