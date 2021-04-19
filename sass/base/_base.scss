@@ -8,6 +8,29 @@
   box-sizing: border-box;
 }
 
+// Customize scrollbar
+// Works on Firefox
+* {
+  scrollbar-width: thin;
+  scrollbar-color: variables.$scrollbar-handle-color
+    variables.$scrollbar-track-color;
+}
+
+// Works on Chrome, Edge, and Safari
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: variables.$scrollbar-track-color;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: variables.$scrollbar-handle-color;
+  border-radius: 20px;
+  border: 3px solid variables.$scrollbar-track-color;
+}
+
 html {
   width: 100%;
   margin: 0;
