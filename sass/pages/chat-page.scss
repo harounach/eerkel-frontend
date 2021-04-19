@@ -63,6 +63,21 @@
     @include mixins.xlarge-tablet {
       width: 85%;
     }
+
+    // small-desktop
+    @include mixins.small-desktop {
+      width: 80%;
+    }
+
+    // desktop
+    @include mixins.desktop {
+      width: 75%;
+    }
+
+    // large-desktop
+    @include mixins.large-desktop {
+      width: 75%;
+    }
   }
 
   // chat-page__messages
@@ -99,7 +114,7 @@
       padding: 1rem;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
     }
   }
 
@@ -107,7 +122,32 @@
   &__list {
     // large-tablet
     @include mixins.large-tablet {
-      margin: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    // xlarge-tablet
+    @include mixins.xlarge-tablet {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    // small-desktop
+    @include mixins.small-desktop {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    // desktop
+    @include mixins.desktop {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+
+    // large-desktop
+    @include mixins.large-desktop {
+      padding-left: 3rem;
+      padding-right: 3rem;
     }
   }
 
@@ -131,7 +171,7 @@
   &__friends {
     width: calc(100% - 3.5rem);
     height: 100%;
-    position: absolute;
+    position: fixed;
 
     // z-index
     @include mixins.z-index("drawer");
@@ -157,7 +197,7 @@
   // chat-page__chat-friends
   &__chat-friends {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 3.5rem);
     padding: 1rem;
     background-color: variables.$surface-color;
     display: flex;
@@ -165,6 +205,7 @@
 
     // large-tablet
     @include mixins.large-tablet {
+      height: 100%;
       // box-shadow
       @include mixins.surface-shadow;
     }
@@ -184,6 +225,7 @@
   &__btn-wrapper {
     justify-content: center;
     flex-shrink: 0;
+    margin-top: auto;
   }
 
   // chat-page__footer
