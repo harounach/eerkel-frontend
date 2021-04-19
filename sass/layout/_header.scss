@@ -137,6 +137,17 @@
     width: 100%;
     height: 100%;
     cursor: pointer;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // profile-dropdown__name
+  &__name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
   }
 
   // profile-dropdown__content
