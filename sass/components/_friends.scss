@@ -17,6 +17,13 @@
     height: 3.5rem;
     display: flex;
     align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.25rem;
+
+    &:hover {
+      background-color: rgba($color: variables.$primary-color, $alpha: 0.04);
+    }
   }
 
   // friends__avatar
