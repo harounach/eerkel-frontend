@@ -24,6 +24,11 @@
     &:hover {
       background-color: rgba($color: variables.$primary-color, $alpha: 0.04);
     }
+
+    // friends__item--friend
+    &--friend {
+      background-color: rgba($color: variables.$primary-color, $alpha: 0.08);
+    }
   }
 
   // friends__avatar
