@@ -47,6 +47,20 @@
       display: block;
     }
   }
+
+  // form__message
+  &__message {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: center;
+    color: typography.$text-high-color;
+    display: none;
+
+    // form__message--show
+    &--show {
+      display: block;
+    }
+  }
 }
 
 .seach-form {
