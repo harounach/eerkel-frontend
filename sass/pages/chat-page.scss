@@ -158,11 +158,16 @@
     left: 0;
     right: 0;
 
+    // z-index
+    @include mixins.z-index("bottom-bar");
+
     // large-tablet
     @include mixins.large-tablet {
       position: static;
       // box-shadow
       @include mixins.surface-shadow;
+      // z-index
+      @include mixins.z-index("no-elevation");
       margin-top: 1rem;
     }
   }
