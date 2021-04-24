@@ -1,5 +1,6 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
+@use "../abstracts/animations" as anim;
 
 // chat-page
 .chat-page {
@@ -178,14 +179,26 @@
     height: 100%;
     position: fixed;
 
-    // z-index
-    @include mixins.z-index("drawer");
-
-    transform: translateX(-100%);
+    // animaiton start
+    @include anim.animation-start {
+      transition: anim.$transform-transition;
+      will-change: transform;
+      // z-index
+      @include mixins.z-index("drawer");
+      transform: translateX(-100%);
+    }
 
     // chat-content__friends--open
     &--open {
-      transform: translateX(0);
+      // animation end
+      @include anim.animation-end {
+        transform: translateX(0);
+      }
+    }
+
+    // tablet
+    @include mixins.tablet {
+      width: 70%;
     }
 
     // large-tablet
