@@ -36,6 +36,17 @@
       border-width: 4px;
     }
   }
+
+  // form__error
+  &__error {
+    margin: 0.5rem 0;
+    color: variables.$error-color;
+    display: none;
+    // form__error--show
+    &--show {
+      display: block;
+    }
+  }
 }
 
 .seach-form {
